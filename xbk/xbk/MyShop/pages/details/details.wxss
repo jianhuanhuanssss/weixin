@@ -1,0 +1,136 @@
+/* pages/details/details.wxss */
+.main{
+  background:#FFFBFF;
+  font-size:14px; 
+  position:relative;
+}
+
+.choose{
+  display: block;
+  margin:26rpx 0 0 20rpx; 
+}
+.bigPic{
+  width:100%;
+  height:400rpx;
+}
+.bigPic image{
+  position:absolute;
+  top:20rpx;
+  left:58rpx;
+  height:380rpx;
+}
+.box{
+    width:100vw;
+    /*white-space 不能丢  */
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.item{
+  width:38%;
+  display:inline-block;
+  margin:20rpx 26rpx;
+  border-radius: 34rpx;
+  overflow: hidden;
+  position:relative;
+}
+.item_active{
+  box-shadow:0 0 25rpx 5rpx green;
+}
+.box-item{
+  width:100%;
+  height:170rpx;
+  margin-bottom:-7rpx;
+}
+.shopcar{
+  padding:18rpx;
+}
+.shopcar>text{
+  font-size:12px; 
+}
+
+
+.shoplist-left .icon{
+  width:100rpx;
+  height:94rpx;
+}
+.shoplist{
+  display: flex;
+  justify-content: space-between;
+  padding:16rpx 0;
+  border-bottom:2px solid #f2f2f2;
+}
+.shoplist>.shoplist-left{
+  display: flex;
+  justify-content: start;
+}
+.shoplist>.shoplist-left>.price{
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx 10rpx;
+}
+.shop-right>image{
+  width:36px;
+  height:36px;
+  margin-top:10rpx;
+}
+.shop-right{
+  display: flex;
+  justify-content:end;
+}
+.shop-right>input{
+  font-size:18px;
+  width:48rpx;
+  border-bottom:1px solid #333;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  color:green;
+  text-decoration: underline;
+  font-size:12px;
+  margin-bottom:140rpx;
+}
+.car{
+  display: flex;
+  justify-content: space-between;
+  border-top:2px solid #f2f2f2;
+  padding:20rpx 25rpx;
+  width:100%;
+  position:fixed;
+  bottom:0; left:0;
+  background:#fefefe;
+  z-index:10;
+}
+.car>view:first-child{
+  display: flex;
+  flex-direction: column;
+
+}
+.car>view:first-child>text:first-child{
+  font-size:10px;
+}
+.car>view:first-child>text:last-child{
+  font-weight:bold;
+}
+.payBtn{
+  width:180rpx;
+  height:65rpx;
+  line-height:65rpx;
+  background:#fefefe;
+  border:2rpx solid #f2f2f2;
+  border-radius: 50rpx;
+  text-align: center;
+  color:#ccc;
+  margin-right:35rpx;
+}
+.pay{
+    width:180rpx;
+    height:65rpx;
+    line-height:65rpx;
+    background:green;
+    border:2rpx solid green;
+    border-radius:50rpx;
+    text-align:center;
+    color:#ccc;
+    margin-right:35rpx;
+}

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="index">
+  <swiper class="banner" autoplay='true' interval="2500" duration="800" circular='true'          indicator-dots='true' indicator-color='#eee' indicator-active-color='green'>
+    <swiper-item>
+      <image src="../../image/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/banner1.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <view class="share">
+    <navigator>
+      <image src="../../image/icon-cake.jpg"></image>
+      <text>分享相聚的味道</text>
+    </navigator>
+  </view>
+  <text class="nav">咖啡 + 祝福 即刻表达心意</text>
+  <view class="main">
+    <view wx:for="{{list}}" wx:key="{{id}}">
+      <image src="http://127.0.0.1:3008/{{item.img_url}}" bindtap="jump" data-id="{{item.id}}" data-title="{{item.title}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class="record">
+    <view>
+      <image src="../../image/icon-record.png" mode="scaleToFill"></image>
+      <text>购买历史</text>
+    </view>
+  </view>
+</view>

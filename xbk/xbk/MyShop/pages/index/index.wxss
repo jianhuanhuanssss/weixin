@@ -1,0 +1,77 @@
+/**index.wxss**/
+.index{
+  background:#FFFBFF;
+  font-size:14px;
+}
+.banner,Swiper-item,image{
+  width:100%;
+  height:550rpx;
+}
+.share>navigator{
+  width:50%;
+  height:85rpx;
+  background:#FFFFFF;
+  border-radius: 50rpx;
+  margin:50rpx auto;
+  box-shadow: 0 0 10rpx 8rpx #eee;
+}
+
+.share>navigator>image{
+  width:59rpx;
+  height:59rpx;
+  margin:12rpx 35rpx 0 35rpx;
+}
+.share>navigator>text{
+  position:relative;
+  top:-15rpx;
+  color:green;
+}
+
+.index>.nav{
+  display: block;
+  margin:25rpx;
+}
+
+
+.index>.main>view{
+  width:48%;
+  height:285rpx;
+  background: #FFF;
+  text-align:center;
+  box-shadow: 0 0 10rpx 8rpx #eee;
+  border-radius: 25rpx;
+  margin-bottom:30rpx;
+}
+.index>.main>view>image{
+  width:340rpx;
+  height:220rpx;
+  padding-top:8rpx;
+}
+
+.index>.main{
+  padding:0 15rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom:40rpx;
+}
+
+.record{
+  text-align: center;
+  margin-bottom:30rpx;
+  font-size:12px;
+  color:green;
+  text-decoration:underline;
+  font-weight:bold;
+}
+.record>view{
+  display: flex;
+  flex-direction: column;
+}
+.record>view>image{
+  width:120rpx;
+  height:120rpx;
+  margin:10rpx auto;
+  box-shadow: 0 0 5rpx 5rpx #eee;
+  border-radius: 50%;
+}

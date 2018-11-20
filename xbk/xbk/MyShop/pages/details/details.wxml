@@ -1,0 +1,45 @@
+<!--pages/details/details.wxml-->
+<view class="main">
+  <view class="bigPic">
+    <image src="{{url}}{{banner}}"></image>
+  </view>
+  <text class="choose">选择卡封面</text>
+  <scroll-view class="box" scroll-x="true">
+    <view wx:for="{{list}}" wx:key="{{id}}"  class="item {{border == index?'item_active':''}}">
+      <image class="box-item" src="{{url}}{{item.img_url}}" bindtap="tab" data-index="{{index}}"></image>
+    </view>
+  </scroll-view>
+  <view class="shopcar">
+    <text>选择商品</text>
+    <view class="shoplist" wx:for="{{shopList}}" wx:key="{{id}}">
+      <view class="shoplist-left">
+        <image class="icon" src="{{url}}{{item.img_url}}"></image>
+        <view class="price">
+          <text>{{item.title}}</text>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+      <view class="shop-right" wx:if="{{item.show}}">
+        <image src="../../image/plus-circle.png" bindtap='add' data-index="{{index}}"></image> 
+      </view>
+      <view class="shop-right" wx:else>
+        <image src="../../image/minus-circle.png" bindtap='remove' data-index="{{index}}"></image>
+        <input type="text" value="{{item.num}}"></input>
+        <image src="../../image/plus-circle (1).png" bindtap='add1' data-index="{{index}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>使用须知</text>
+    <text>隐私权条款</text>
+  </view>
+  <view class="car">
+    <view>
+      <text>0份礼品</text>
+      <text>¥{{price}}</text>
+    </view>
+    <view>
+      <View class=" payBtn {{pay == true ? 'pay':''}}">购 买</View>
+    </view>
+  </view>
+</view>
